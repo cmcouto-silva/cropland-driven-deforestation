@@ -1,0 +1,30 @@
+# Earth Engine Assets
+earth_engine:
+  datasets:
+    gfw: "UMD/hansen/global_forest_change_2023_v1_11"
+    biomes: "projects/mapbiomas-territories/assets/TERRITORIES/LULC/BRAZIL/COLLECTION9/WORKSPACE/BIOMES"
+    mapbiomas: "projects/mapbiomas-public/assets/brazil/lulc/collection9/mapbiomas_collection90_deforestation_secondary_vegetation_v1"
+
+# Export Settings
+export:
+  drive_folder: "GEE_exports"
+  files:
+    mapbiomas_deforestation: "mapbiomas_deforestation_{start_year}_{end_year}"
+    gfw_forest_loss: "gfw_forest_loss_{start_year}_{end_year}"
+
+# Processing Parameters
+processing:
+  mapbiomas:
+    scale: 30  # meters
+    tile_scale: 4
+    start_year: 2010
+    end_year: 2023
+    deforestation_classes:
+      min: 400
+      max: 499
+  gfw:
+    scale: 30  # meters
+    tile_scale: 4
+    start_year: 2010
+    end_year: 2020
+    tree_cover_threshold: 10

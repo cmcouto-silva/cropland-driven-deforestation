@@ -1,0 +1,32 @@
+[project]
+name = "src"
+description = "Comparing Cropland-Driven Deforestation Estimates Across Brazilian Biomes Using Global and Regional Datasets"
+authors = [
+    {name = "Cainã Max Couto da Silva", email = "cmcouto.silva@gmail.com"}
+]
+readme = "README.md"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "earthengine-api>=1.4.1",
+    "folium>=0.18.0",
+    "geopandas>=1.0.1",
+    "ipykernel>=6.29.5",
+    "loguru>=0.7.2",
+    "matplotlib>=3.9.3",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.2",
+    "seaborn>=0.13.2",
+    "shapely>=2.0.6",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.8.1",
+    "src",
+]
+
+[tool.uv.sources]
+src = { workspace = true }
