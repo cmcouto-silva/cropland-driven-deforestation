@@ -60,5 +60,4 @@ The config for downloading these data can be found under `configs/config.yaml`.
 
 ### Analysis
 
-For the analysis, we used the data called `br_deforestation_biome.geojson`, provided for our task. The notebook with the analysis can be found under `notebooks/eda.ipynb`.
-
+For the analysis, we used the data called `br_deforestation_biome.geojson`, provided for our task. The notebook with the analysis can be found under `notebooks/eda.ipynb`. Figures available on `reports/figures`.
